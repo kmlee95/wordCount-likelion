@@ -6,9 +6,16 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+
 </head>
 <body>
-   <h1>hihihi11</h1>
+   <h1>WORD COUNT</h1>
+
+   <a href="{% url 'about' %}">ABOUT</a>
+   <form action="{% url 'count' %}">
+        <textarea cols="40" rows="10" name="fulltext"></textarea>
+        <br>
+        <input type="submit" value="Count!" />
+   </form>
 </body>
 </html>
